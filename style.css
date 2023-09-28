@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+}
+body {
+  width: 100%;
+}
+h1,
+h2,
+h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.container {
+  max-width: 980px;
+  background-color: rgb(234, 234, 234);
+  margin: 0 auto;
+  padding: 20px;
+}
+.html {
+  background-color: black;
+  color: white;
+  padding: 10px 10px;
+  margin: 15px 0px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+article {
+  background-image: url(/assets/pexels-3.jpeg);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+video {
+  width: 100%;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chas Images & Videos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Chas Images & Videos</h1>
+      <section>
+        <h2>Images basic</h2>
+        <div class="html">
+          &lt;img src=&quot;./assets/dog-small.jpeg&quot; alt=&quot;A Puggle, a
+          beagle/pug cross.&quot;/&gt;
+        </div>
+        <div>
+          <img
+            src="./assets/dog-small.jpeg"
+            alt="A Puggle, a beagle/pug cross."
+          />
+        </div>
+        <div class="html">
+          &lt;img src=&quot;./assets/dog-small.jpeg&quot; width=&quot;400&quot;
+          height=&quot;400&quot; alt=&quot;A Puggle, a beagle/pug cross.&quot;
+          /&gt;
+        </div>
+        <div>
+          <img
+            src="./assets/dog-small.jpeg"
+            width="400"
+            height="400"
+            alt="A Puggle, a beagle/pug cross."
+          />
+        </div>
+      </section>
+
+      <section>
+        <h2>Responsive images</h2>
+        <h3>Full width</h3>
+        <div class="html">
+          &lt;img src=&quot;./assets/dog.jpeg&quot; alt=&quot;A Puggle, a
+          beagle/pug cross.&quot;/&gt; &lt;style&gt; img {width:100%;}
+          &lt;/style&gt;
+        </div>
+        <div>
+          <img
+            style="width: 100%"
+            src="./assets/dog.jpeg"
+            alt="A Puggle, a beagle/pug cross."
+          />
+        </div>
+
+        <h3>With picture attribute</h3>
+        <p>Change screen size for test</p>
+        <div class="html">
+          &lt;picture&gt; &lt;source srcset=&quot;./assets/pexels-1.jpeg&quot;
+          media=&quot;(min-width: 800px)&quot; alt=&quot;min width 800px&quot;
+          /&gt; &lt;source srcset=&quot;./assets/pexels-2.jpeg&quot;
+          media=&quot;(min-width: 600px)&quot; alt=&quot;min width 600px&quot;
+          /&gt; &lt;img src=&quot;./assets/dog-small.jpeg&quot; alt=&quot;Other
+          screen&quot; width=&quot;100%&quot; /&gt; &lt;/picture&gt;
+        </div>
+        <div>
+          <picture>
+            <source
+              srcset="./assets/pexels-2.jpeg"
+              media="(min-width: 800px)"
+              alt="min width 800px"
+            />
+            <source
+              srcset="./assets/pexels-1.jpeg"
+              media="(min-width: 600px)"
+              alt="min width 600px"
+            />
+            <img
+              src="./assets/dog-small.jpeg"
+              alt="Other screen"
+              width="100%"
+            />
+          </picture>
+        </div>
+      </section>
+      <section>
+        <h2>Images as Backgrounds</h2>
+        <div class="html">
+          &lt;article&gt;
+              &lt;h1&gt;Look ma, no img!&lt;/h1&gt;
+            &lt;/article&gt;
+            &lt;style&gt;
+                    </br>
+            article {
+              background-image: url(/assets/pexels-3.jpeg);
+              width: 100%;
+              height: 400px;
+              background-size: cover;
+            }
+            &lt;/style&gt;
+        </div>
+        <div>
+          <article>
+            <h1>Look ma, no img!</h1>
+          </article>
+        </div>
+      </section>
+      <section>
+        <h2>Video</h2>
+        <div class="html">
+          &lt;video controls autoplay src=&quot;./assets/test-video.01.mp4&quot;&gt;
+  &lt;p&gt;This browser doesn't support video...&lt;/p&gt;
+&lt;/video&gt;
+</br>
+&lt;style&gt;
+video {
+  width: 100%;
+}
+&lt;/style&gt;
+        </div>
+        <div>
+          <video controls autoplay src="./assets/test-video.01.mp4">
+            <p>This browser doesn't support video...</p>
+          </video>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
